@@ -1,0 +1,160 @@
+<html>
+<head>
+	<title>REGISTRATION FORM</title>
+	<style>
+	legend{
+		font-size:25px;
+	}
+.mydiv{
+	margin: auto;
+ width: 60%;
+ padding: 10px;
+ background-color:#ffcce4;
+	border :5px solid black;
+}
+.p{
+	margin: auto;
+ width: 60%;
+  background-color: #ffcce4;
+ padding: 10px;
+	border :5px solid black;
+	color: #b30000;
+}
+.head{
+	margin: auto;
+	 background-color: #ffcce4;
+ width: 60%;
+ padding: 10px;
+	border :5px solid black;
+}
+legend{
+	font-style: italic;
+	color: #006666;
+}
+h2{
+	font-style: italic;
+		color:#006666;
+}
+h3{
+	font-style: italic;
+		color:#006666;
+}
+.h
+{
+	margin: auto;
+ width: 60%;
+ padding: 10px;
+	border :5px solid black;
+	 background-color: #ffcce4;
+	}h1{
+	font-style: italic;
+	color:#ff0055;
+}
+
+table{
+	color: #b30000;
+}
+body{
+background-color: #ccebff;
+}
+</style>
+</head>
+<body>
+	<form>
+		<h1 align="center">Registration Form</h1>
+		<legend align="center"><b>Basic details</b></legend>
+				<div class="mydiv">
+			<table>
+				<img src="Register.jpg" alt="photo" width="160" height="168" style="float: right ;padding: 15px;">
+				<tr><td><b>Name</b></td><td><input type="text" name="Name" placeholder="ManvithaRoy"></td></tr>
+				<tr><td><b>Roll Number</b></td><TD><input type="Number" name="Roll Number" placeholder="1906105"></TD></tr>
+				<tr><td><b>Gender</b></td><td><b>male</b><input type="radio" value="male" name="Gender"><b>female</b><input type="radio" value="female" name="Gender"></td></tr>
+				<tr><td><b>DOB</b></td><td><input type="date" name="DOB"></td></tr>
+				<tr><td><b>PWD</b></td><td>Yes<input type="radio" value="Yes" name="PWD">No<input type="radio" value="No" name="PWD"></td></tr>
+				<tr><td><b>Category</b></td><td><select value="">
+					<option value="GEN">GEN</option>
+					<option value="OBC">OBC</option>
+					<option value="SC">SC</option>
+					<option value="ST">ST</option>
+				</select></td></tr>
+				<tr><td><b>Address</b></td></tr>
+               <tr><td><textarea rows="5" cols="50" maxlength="10"></textarea></td></tr>
+                <br>
+				<tr><td align="center" font-size:25px;><b>(PLEASE INPUT CORRECT PINCODE)</b></td></tr>
+				<tr><td><b>Pincode</b></td>&nbsp<td><input type="number" name="PIN
+				"></td></tr>
+				<tr><td><b>Phone number of student</b></td><td><input type="number"></td></tr>
+				<tr><td><b>Phone number of guardian</b></td><td><input type="number"></td></tr>
+			</table></div>
+      </div>
+			<h2 align="center">Academic information</h3>
+			<div class="h">
+
+      <table>
+          <tr>
+            <td><b>Course</b></td>
+            <td>
+              <select name = "dropdown">
+              <option value = "" selected>B.Tech</option>
+              <option value = "">B.Arch</option>
+              <option value = "">Int. M.Sc.</option>
+              <option value = "">M.tech</option>
+              <option value="">M.Arch</option>
+              <option value="">Ph.D.</option>
+             </select>
+            </td>
+          </tr>
+          <tr>
+            <td><b>Branch</b></td><td><input type="text" name="" value=""></td>
+          </tr>
+          <tr>
+            <td><b>Semester</b></td><td><input type="number" name="" value=""></td><td>(for which allotment will be done)</td>
+          </tr>
+          <tr>
+            <td><b>All India Rank</b></td><td><input type="text" name="" value=""></td><td>(In JEE main/GATE)</td>
+          </tr>
+          <tr>
+            <td><b>Category Rank</b></td><td><input type="text" name="" value=""></td><td>(In JEE main/GATE)</td>
+          </tr>
+          <tr>
+            <td><b>CGPA</b></td><td><input type="number" name="" value=""></td>
+          </tr>
+          <tr>
+            <td><b>BackLog</b></td><td><input type="radio" name="" value=""><label for="">Yes</label><input type="radio" name="" value=""><label for="">No</label></td>
+          </tr>
+          <td><b>Hostel Accomodation</b></td><td><input type="radio" name="" value=""><label for="">Yes</label><input type="radio" name="" value=""><label for="">No</label></td>
+          <tr>
+            <td><b>Name Of Hostel</b></td><td><input type="text" name="" value=""></td>
+          </tr>
+          <tr>
+            <td><b>Room Number</b></td><td><input type="text" name="" value=""></td>
+          </tr>
+
+      </table>
+		</div>
+		<legend><center><b>Account Details</b></legend>
+		<div class="head">
+      <table>
+        <tr>
+          <td><b>Account Holder Name</b></td><td><input type="text" name="" value=""></td><td>(As per Bank Passbook)</td>
+        </tr>
+        <tr>
+          <td><b>Account Number</b></td><td><input type="text" name="" value=""></td>
+        </tr>
+        <tr>
+          <td><b>Bank Name</b></td>
+          <td><input type="text" name="" value=""></td>
+        </tr>
+        <tr>
+          <td><b>Branch Name</b></td>
+          <td><input type="text" name="" value=""></td>
+        </tr>
+      </table>
+    </div>
+<legend>
+		<center><b>Terms and Conditions</b></center></legend><div class="p"><p><input type="checkbox"name=""value="">I certify that the above information provided by me is correct to best of my knowledge.<br>
+			<center><button type="submit" class="submit">Submit</button>
+	<button type="reset" class="Reset" >Reset</button></center>	</div>
+	</form>
+</body>
+</html>
