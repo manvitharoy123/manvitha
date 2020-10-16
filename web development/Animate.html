@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Flexbox</title>
+	<style type="text/css">
+		body{
+			margin: 0;
+		background-image: linear-gradient(to bottom right, violet, red);
+			background-size: 100%;
+			background-position: fixed;
+			font-family: sans-serif;
+			font-weight: 100;
+		}
+		#heading{
+			color: white;
+			text-align: center;
+			background-image: linear-gradient(to right, rgba(255,0,0,0),rgba(255,0,0,0.8));
+		}
+		marquee{
+			 animation: myanimation 10s infinite;
+		}
+		@keyframes myanimation {
+  0% {background-color: white;}
+  25%{background-color:yellow;}
+  50%{background-color:blue;}
+  75%{background-color:white;}
+  100% {background-color:grey ;}
+}
+.	container{
+  display : flex;
+  flex-wrap : wrap;
+  justify-content : center;
+  spacing : 30px;
+  padding : 30px;
+}
+body{
+   background-color : #87CEFA;
+}
+img{
+  width : 450px;
+  height : 350px;
+  margin : 5px;
+  transition : all 1s;
+  box-shadow : 4px 4px 4px blue;
+}
+img:hover{
+  width : 550px;
+  height : 430px;
+}
+h2{
+  text-align : center;
+}
+h1{
+  text-align : center;
+}
+p{
+	font-size: 21px;
+}
+a{
+	display: block; text-align: center;
+}
+.flip-box {
+  background-color: transparent;
+  width: 300px;
+  height: 200px;
+  display : flex;
+  flex-wrap : wrap;
+  justify-content : center;
+  border: 1px solid #f1f1f1;
+  perspective: 1000px;
+}
+#i{
+
+  animation: exam 2s infinite ;
+border:2px SOLID blue;
+margin:2px;
+text-align:center;
+ width: 250px;
+  height: 40px;
+  background: green;
+  transition: width 2s, height 2s, transform 2s;
+}@keyframes exam {
+  from {background-color: blue;}
+  to {background-color: pink;}
+}
+
+#i:hover {
+  width: 450px;
+  height: 90px;
+  transform: rotate(20deg);
+}
+.flip-box-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip-box:hover .flip-box-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-box-front, .flip-box-back {
+
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-box-front {
+  background-color: #bbb;
+  color: black;
+}
+
+.flip-box-back {
+  background-color: #555;
+  color: white;
+  transform: rotateY(180deg);
+}
+	</style>
+</head>
+<body>
+  <h1 id="i"><b>Animations</b></h1>
+        <h2 class="info">Kopparapu venkata Naga Manvitha roy</h2>
+        <h2 class="info">1906105</h2>
+				<p align="center"><b>.......Venice - Dream place.......</b></p>
+				<a href="https://www.wallpaperbetter.com/wallpaper/762/348/983/venice-italy-sky-1080P-wallpaper-middle-size.jpg"><b><span style="text-align:center">One of my favorite pics</span></b></a>
+
+        <marquee style="font-size:32px"><b> Venice</b></marquee> <hr>
+
+        <div class="container" align="center">
+            <br><br>
+
+        <img src="https://wallpapercave.com/wp/w9DrSmA.jpg" width="250" height="300">
+        <img src="https://cdn.wallpapersafari.com/50/59/YasIwx.jpg" width="250" height="300">
+        <img src="https://images6.alphacoders.com/546/thumb-1920-546467.jpg" width="250" height="300">
+        <img src="https://wallpapercave.com/wp/6KGC0Yi.jpg" width="250" height="300">
+				<img src="https://hdwallpaperim.com/wp-content/uploads/2017/08/24/107069-Venice-748x468.jpg" width="250" height="300">
+
+
+        </div>
+
+<div class="flip-box">
+  <div class="flip-box-inner">
+    <div class="flip-box-front">
+      <img src="https://images-na.ssl-images-amazon.com/images/I/71IeYNcBYdL._SX569_.jpg" alt="flower" style="width:300px;height:200px">
+        </div>
+    <div class="flip-box-back">
+      <h2>Flowers</h2>
+      <p>teddy with flowers</p>
+    </div>
+  </div>
+</div>
+<div class="flip-box">
+  <div class="flip-box-inner">
+    <div class="flip-box-front">
+      <img src="https://www.ikea.com/in/en/images/products/smycka-artificial-flower-rose-red__0903311_PE596728_S5.JPG" alt="flower" style="width:300px;height:200px">
+    </div>
+    <div class="flip-box-back">
+      <h2>Flowers</h2>
+      <p>Rose</p>
+    </div>
+  </div>
+</div>
+<div class="flip-box">
+  <div class="flip-box-inner">
+    <div class="flip-box-front">
+      <img src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/types-of-flowers-1579719085.jpg" alt="flower" style="width:300px;height:200px">
+    </div>
+    <div class="flip-box-back">
+      <h2>Flowers</h2>
+      <p>Pretty one</p>
+    </div>
+  </div>
+</div>
+
+    </body>
+</html>
